@@ -1,0 +1,1637 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Продакшн</title>
+	<link rel="stylesheet" href="css/app.css">
+	<script>/*! @formatter:off modernizr 3.6.0 (Custom Build) | MIT https://modernizr.com/download/?-overflowscrolling-webp-setclasses !*/!function(e,n,t){function r(e,n){return typeof e===n}function o(){var e,n,t,o,i,s,a;for(var l in _)if(_.hasOwnProperty(l)){if(e=[],n=_[l],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(t=0;t<n.options.aliases.length;t++)e.push(n.options.aliases[t].toLowerCase());for(o=r(n.fn,"function")?n.fn():n.fn,i=0;i<e.length;i++)s=e[i],a=s.split("."),1===a.length?Modernizr[a[0]]=o:(!Modernizr[a[0]]||Modernizr[a[0]]instanceof Boolean||(Modernizr[a[0]]=new Boolean(Modernizr[a[0]])),Modernizr[a[0]][a[1]]=o),w.push((o?"":"no-")+a.join("-"))}}function i(e){var n=S.className,t=Modernizr._config.classPrefix||"";if(B&&(n=n.baseVal),Modernizr._config.enableJSClass){var r=new RegExp("(^|\\s)"+t+"no-js(\\s|$)");n=n.replace(r,"$1"+t+"js$2")}Modernizr._config.enableClasses&&(n+=" "+t+e.join(" "+t),B?S.className.baseVal=n:S.className=n)}function s(e,n){if("object"==typeof e)for(var t in e)b(e,t)&&s(t,e[t]);else{e=e.toLowerCase();var r=e.split("."),o=Modernizr[r[0]];if(2==r.length&&(o=o[r[1]]),"undefined"!=typeof o)return Modernizr;n="function"==typeof n?n():n,1==r.length?Modernizr[r[0]]=n:(!Modernizr[r[0]]||Modernizr[r[0]]instanceof Boolean||(Modernizr[r[0]]=new Boolean(Modernizr[r[0]])),Modernizr[r[0]][r[1]]=n),i([(n&&0!=n?"":"no-")+r.join("-")]),Modernizr._trigger(e,n)}return Modernizr}function a(e,n){return!!~(""+e).indexOf(n)}function l(){return"function"!=typeof n.createElement?n.createElement(arguments[0]):B?n.createElementNS.call(n,"http://www.w3.org/2000/svg",arguments[0]):n.createElement.apply(n,arguments)}function A(e){return e.replace(/([a-z])-([a-z])/g,function(e,n,t){return n+t.toUpperCase()}).replace(/^-/,"")}function u(e,n){return function(){return e.apply(n,arguments)}}function f(e,n,t){var o;for(var i in e)if(e[i]in n)return t===!1?e[i]:(o=n[e[i]],r(o,"function")?u(o,t||n):o);return!1}function c(n,t,r){var o;if("getComputedStyle"in e){o=getComputedStyle.call(e,n,t);var i=e.console;if(null!==o)r&&(o=o.getPropertyValue(r));else if(i){var s=i.error?"error":"log";i[s].call(i,"getComputedStyle returning null, its possible modernizr test results are inaccurate")}}else o=!t&&n.currentStyle&&n.currentStyle[r];return o}function p(e){return e.replace(/([A-Z])/g,function(e,n){return"-"+n.toLowerCase()}).replace(/^ms-/,"-ms-")}function d(){var e=n.body;return e||(e=l(B?"svg":"body"),e.fake=!0),e}function m(e,t,r,o){var i,s,a,A,u="modernizr",f=l("div"),c=d();if(parseInt(r,10))for(;r--;)a=l("div"),a.id=o?o[r]:u+(r+1),f.appendChild(a);return i=l("style"),i.type="text/css",i.id="s"+u,(c.fake?c:f).appendChild(i),c.appendChild(f),i.styleSheet?i.styleSheet.cssText=e:i.appendChild(n.createTextNode(e)),f.id=u,c.fake&&(c.style.background="",c.style.overflow="hidden",A=S.style.overflow,S.style.overflow="hidden",S.appendChild(c)),s=t(f,e),c.fake?(c.parentNode.removeChild(c),S.style.overflow=A,S.offsetHeight):f.parentNode.removeChild(f),!!s}function g(n,r){var o=n.length;if("CSS"in e&&"supports"in e.CSS){for(;o--;)if(e.CSS.supports(p(n[o]),r))return!0;return!1}if("CSSSupportsRule"in e){for(var i=[];o--;)i.push("("+p(n[o])+":"+r+")");return i=i.join(" or "),m("@supports ("+i+") { #modernizr { position: absolute; } }",function(e){return"absolute"==c(e,null,"position")})}return t}function h(e,n,o,i){function s(){f&&(delete U.style,delete U.modElem)}if(i=r(i,"undefined")?!1:i,!r(o,"undefined")){var u=g(e,o);if(!r(u,"undefined"))return u}for(var f,c,p,d,m,h=["modernizr","tspan","samp"];!U.style&&h.length;)f=!0,U.modElem=l(h.shift()),U.style=U.modElem.style;for(p=e.length,c=0;p>c;c++)if(d=e[c],m=U.style[d],a(d,"-")&&(d=A(d)),U.style[d]!==t){if(i||r(o,"undefined"))return s(),"pfx"==n?d:!0;try{U.style[d]=o}catch(v){}if(U.style[d]!=m)return s(),"pfx"==n?d:!0}return s(),!1}function v(e,n,t,o,i){var s=e.charAt(0).toUpperCase()+e.slice(1),a=(e+" "+x.join(s+" ")+s).split(" ");return r(n,"string")||r(n,"undefined")?h(a,n,o,i):(a=(e+" "+E.join(s+" ")+s).split(" "),f(a,n,t))}function y(e,n,r){return v(e,t,t,n,r)}var w=[],_=[],C={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var t=this;setTimeout(function(){n(t[e])},0)},addTest:function(e,n,t){_.push({name:e,fn:n,options:t})},addAsyncTest:function(e){_.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=C,Modernizr=new Modernizr;var b,S=n.documentElement,B="svg"===S.nodeName.toLowerCase();!function(){var e={}.hasOwnProperty;b=r(e,"undefined")||r(e.call,"undefined")?function(e,n){return n in e&&r(e.constructor.prototype[n],"undefined")}:function(n,t){return e.call(n,t)}}(),C._l={},C.on=function(e,n){this._l[e]||(this._l[e]=[]),this._l[e].push(n),Modernizr.hasOwnProperty(e)&&setTimeout(function(){Modernizr._trigger(e,Modernizr[e])},0)},C._trigger=function(e,n){if(this._l[e]){var t=this._l[e];setTimeout(function(){var e,r;for(e=0;e<t.length;e++)(r=t[e])(n)},0),delete this._l[e]}},Modernizr._q.push(function(){C.addTest=s}),Modernizr.addAsyncTest(function(){function e(e,n,t){function r(n){var r=n&&"load"===n.type?1==o.width:!1,i="webp"===e;s(e,i&&r?new Boolean(r):r),t&&t(n)}var o=new Image;o.onerror=r,o.onload=r,o.src=n}var n=[{uri:"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",name:"webp"},{uri:"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",name:"webp.alpha"},{uri:"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",name:"webp.animation"},{uri:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",name:"webp.lossless"}],t=n.shift();e(t.name,t.uri,function(t){if(t&&"load"===t.type)for(var r=0;r<n.length;r++)e(n[r].name,n[r].uri)})});var Q="Moz O ms Webkit",x=C._config.usePrefixes?Q.split(" "):[];C._cssomPrefixes=x;var E=C._config.usePrefixes?Q.toLowerCase().split(" "):[];C._domPrefixes=E;var T={elem:l("modernizr")};Modernizr._q.push(function(){delete T.elem});var U={style:T.elem.style};Modernizr._q.unshift(function(){delete U.style}),C.testAllProps=v,C.testAllProps=y,Modernizr.addTest("overflowscrolling",y("overflowScrolling","touch",!0)),o(),i(w),delete C.addTest,delete C.addAsyncTest;for(var P=0;P<Modernizr._q.length;P++)Modernizr._q[P]();e.Modernizr=Modernizr}(window,document);/*! @formatter:on */</script>
+
+</head>
+
+<body class="black">
+	<div class="page-wrapper">
+		<!--Header-->
+		<header id="header" class="header header--marketing">
+			<div class="container header__container">
+				<!--Logo-->
+				<div class="header__wrapper">
+					<div>
+						<button class="burger" aria-label="Open menu" aria-expanded="false" data-burger>
+							<span class="burger__line"></span>
+						</button>
+						<a href="index.html" class="header__logo">
+							<img src="images/icon/logo.svg" alt="Vice Versa" width="124" height="36">
+						</a>
+					</div>
+					<div class="header__panel" data-mobile-menu="wrapper">
+						<!-- Menu -->
+						<nav class="nav">
+							<ul class="nav__list">
+								<li class="nav__item">
+									<a href="#object" class="nav__link js-smooth-scroll nav__link--marketing">
+										<span>Предметная съемка</span>
+									</a>
+								</li>
+								<li class="nav__item">
+									<a href="#interio" class="nav__link js-smooth-scroll nav__link--marketing">
+										<span>Интерьерная съемка</span>
+									</a>
+								</li>
+								<li class="nav__item">
+									<a href="#creative" class="nav__link js-smooth-scroll nav__link--marketing">
+										<span>Креативная съемка</span>
+									</a>
+								</li>
+							</ul>
+
+						</nav>
+					</div>
+					<button type="button" class="b-btn b-btn--secondary b-btn--orange-white header__marketing js-show-popup" data-trigger="connection-orange">
+						<span>
+							Связаться
+						</span>
+						<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M13.7878 13.3141C13.0132 13.3141 12.5301 14.0082 12.7513 14.6639C13.5447 17.0153 15.0232 20.5524 17.228 22.7573C19.4329 24.9621 22.9701 26.4406 25.3214 27.234C25.9771 27.4552 26.6712 26.9721 26.6712 26.1975V23.81C26.6712 23.7245 26.6249 23.6459 26.5503 23.6044L24.4706 22.4481C24.4027 22.4104 24.3205 22.4086 24.251 22.4433L22.0331 23.5522C21.8945 23.6216 21.7368 23.6433 21.5845 23.6141L21.7175 22.9209C21.5845 23.6141 21.5847 23.6142 21.5845 23.6141L21.5825 23.6137L21.5798 23.6132L21.5727 23.6118L21.5515 23.6074C21.5342 23.6037 21.5108 23.5985 21.4817 23.5916C21.4237 23.5779 21.3429 23.5574 21.2434 23.5287C21.0446 23.4713 20.7692 23.3806 20.4492 23.2442C19.8118 22.9726 18.9798 22.5125 18.2263 21.759C17.4729 21.0056 17.0116 20.1724 16.7387 19.5342C16.6016 19.2136 16.5102 18.9377 16.4523 18.7386C16.4233 18.6389 16.4026 18.558 16.3887 18.4999C16.3818 18.4708 16.3766 18.4474 16.3728 18.4301L16.3683 18.4088L16.3669 18.4018L16.3664 18.3991L16.3662 18.398C16.3661 18.3978 16.366 18.3971 17.0589 18.2623L16.3662 18.398C16.3364 18.2452 16.3579 18.0859 16.4275 17.9467L17.5366 15.7284C17.5713 15.659 17.5696 15.5769 17.5319 15.509C17.5319 15.509 17.5319 15.509 17.5319 15.509L16.3807 13.4353C16.3391 13.3604 16.2603 13.3141 16.1749 13.3141H13.7878ZM17.8076 18.3433C17.8077 18.3437 17.8078 18.3441 17.8079 18.3445C17.8524 18.4972 17.9253 18.7185 18.0368 18.9792C18.2609 19.5034 18.6328 20.169 19.2246 20.7607C19.2245 20.7607 19.2246 20.7607 19.2246 20.7607M19.2246 20.7607C19.8162 21.3524 20.4803 21.7228 21.0026 21.9454C21.2624 22.0561 21.4828 22.1284 21.6349 22.1723C21.6346 22.1722 21.6352 22.1724 21.6349 22.1723L23.6196 21.1806C23.6196 21.1806 23.6196 21.1806 23.6196 21.1806C24.1061 20.9374 24.6813 20.95 25.1566 21.2142L27.2362 22.3704C27.7589 22.661 28.083 23.2121 28.083 23.81V26.1975C28.083 27.8546 26.5184 29.1278 24.8701 28.5716C22.4892 27.7683 18.6808 26.2066 16.2298 23.7555C13.7787 21.3046 12.217 17.4961 11.4137 15.1153C10.8575 13.467 12.1307 11.9023 13.7878 11.9023H16.1749C16.7733 11.9023 17.3245 12.2269 17.6149 12.7499L18.7662 14.8238C19.03 15.2989 19.0424 15.8737 18.7993 16.3598L17.8076 18.3433" fill="#25A4C4" />
+							<rect x="0.5" y="0.5" width="39" height="39" rx="19.5" stroke="#25A4C4" />
+						</svg>
+					</button>
+				</div>
+				<div class="header-menu">
+					<div class="header-menu__overlay" data-overlay>
+						<div class="header-menu__panel" data-menu>
+							<div class="header-menu__top">
+								<button class="header-menu__close" data-close>
+									<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M17.6316 15.9997L22.5213 20.8894C22.9713 21.3395 22.9713 22.0692 22.5213 22.5193C22.0712 22.9694 21.3414 22.9694 20.8914 22.5193L16.0017 17.6296L11.112 22.5193C10.6619 22.9694 9.93218 22.9694 9.48209 22.5193C9.03201 22.0692 9.03201 21.3395 9.48209 20.8894L14.3718 15.9997L9.48209 11.11C9.03201 10.66 9.03201 9.93022 9.48209 9.48014C9.93218 9.03006 10.6619 9.03006 11.112 9.48014L16.0017 14.3698L20.8914 9.48014C21.3414 9.03006 22.0712 9.03006 22.5213 9.48014C22.9713 9.93022 22.9713 10.66 22.5213 11.11L17.6316 15.9997Z" fill="#232323" />
+									</svg>
+								</button>
+								<svg class="header-menu__logo" width="124" height="36" viewBox="0 0 124 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_399_9104)">
+										<path d="M68.7268 1.02891L71.808 0.000484824L64.4967 15.3754H61.8855L54.5742 0.000484824L57.6554 1.02891L63.1911 12.6501L68.7268 1.02891ZM75.4637 15.3754H72.487V4.21703H75.4637V15.3754ZM74.9937 2.52012C74.7121 2.7842 74.3381 2.93149 73.9492 2.93149C73.5603 2.93149 73.1864 2.7842 72.9047 2.52012C72.6482 2.23561 72.5005 1.87193 72.487 1.4917C72.4839 1.30157 72.5193 1.11274 72.591 0.936187C72.6627 0.759634 72.7694 0.598881 72.9047 0.463276C73.0354 0.317461 73.1962 0.200759 73.3763 0.120956C73.5564 0.0411528 73.7517 8.25391e-05 73.9492 0.000484824C74.1475 -0.00485646 74.3444 0.0339944 74.5253 0.114133C74.7061 0.194273 74.8663 0.313627 74.9937 0.463276C75.1457 0.588745 75.2669 0.746415 75.3483 0.924502C75.4297 1.10259 75.4691 1.29649 75.4637 1.4917C75.4588 1.68529 75.4147 1.87597 75.334 2.05257C75.2533 2.22916 75.1376 2.38812 74.9937 2.52012ZM82.4095 13.0101H89.4074L90.1908 15.3754H81.4694C80.2692 15.3892 79.1096 14.9472 78.2316 14.1413C77.7967 13.7955 77.4482 13.3561 77.2128 12.8569C76.9774 12.3577 76.8614 11.812 76.8737 11.2617V8.2793C76.866 7.72975 76.9841 7.18555 77.2192 6.68705C77.4542 6.18856 77.8002 5.74857 78.2316 5.39971C79.0894 4.59511 80.2325 4.15228 81.4172 4.1656H90.1386L89.3552 6.53098H82.4095C82.0935 6.49799 81.774 6.53642 81.4753 6.64335C81.1767 6.75028 80.9067 6.92289 80.6861 7.14804C80.4411 7.34614 80.2472 7.59847 80.1201 7.88444C79.993 8.17041 79.9364 8.48191 79.9549 8.79351V10.7475C79.9245 11.0604 79.9756 11.3758 80.1036 11.6637C80.2315 11.9517 80.432 12.2027 80.6861 12.393C81.1696 12.7907 81.7794 13.0091 82.4095 13.0101ZM95.5698 10.8504C94.4209 10.7989 93.742 10.6447 93.4809 10.3876V11.056C93.4626 11.3602 93.5196 11.6641 93.647 11.9418C93.7743 12.2194 93.9682 12.4625 94.212 12.6501C94.6955 13.0478 95.3053 13.2662 95.9354 13.2672H103.56L102.829 15.3754H95.0476C93.8473 15.3892 92.6878 14.9472 91.8097 14.1413C91.3798 13.7967 91.0396 13.3559 90.8175 12.8558C90.5675 12.361 90.4422 11.8143 90.4519 11.2617V8.2793C90.4442 7.72975 90.5623 7.18555 90.7973 6.68705C91.0324 6.18856 91.3784 5.74857 91.8097 5.39971C92.6676 4.59511 93.8107 4.15228 94.9954 4.1656H99.9044C100.682 4.14898 101.458 4.2531 102.202 4.47413C102.739 4.61776 103.226 4.9021 103.612 5.29687C103.892 5.6022 104.122 5.94931 104.291 6.3253C104.441 6.68382 104.512 7.06923 104.5 7.45656C104.509 7.76598 104.491 8.07557 104.448 8.38214C104.382 8.68561 104.277 8.97943 104.135 9.2563C103.965 9.58673 103.714 9.86971 103.403 10.079C103.016 10.3272 102.594 10.5178 102.15 10.6447C101.519 10.8006 100.868 10.8698 100.218 10.8504H95.5698ZM100.74 6.06819H95.2043C95.0108 6.09061 94.8189 6.12496 94.6298 6.17103C94.4258 6.19928 94.2301 6.26935 94.0554 6.37672C93.9032 6.50058 93.7634 6.63831 93.6376 6.78809C93.5251 7.01139 93.4712 7.2589 93.4809 7.50798C93.4855 7.70074 93.5207 7.8916 93.5853 8.07362C93.6604 8.21775 93.7478 8.35537 93.8465 8.48499C93.9781 8.58215 94.1179 8.66816 94.2642 8.74209C94.4144 8.80066 94.573 8.83538 94.7343 8.84494C94.8909 8.84494 94.9954 8.89636 95.0998 8.89636H100.218C101.523 8.89636 102.202 8.43357 102.202 7.45656C102.203 7.26209 102.161 7.06978 102.08 6.89243C101.999 6.71509 101.88 6.55681 101.732 6.42814C101.606 6.29694 101.451 6.19619 101.279 6.13376C101.107 6.07132 100.922 6.04888 100.74 6.06819Z" fill="#262626" />
+										<path d="M68.7268 21.5968L71.808 20.5684L64.4967 35.9433H61.8855L54.5742 20.5684L57.6554 21.5968L63.1911 33.2694L68.7268 21.5968ZM75.6726 31.4182C74.5237 31.3668 73.8448 31.2126 73.5836 30.9554V31.6239C73.5654 31.9281 73.6224 32.232 73.7497 32.5097C73.8771 32.7873 74.071 33.0304 74.3148 33.218C74.7983 33.6157 75.4081 33.8341 76.0382 33.835H83.6628L82.9317 35.9433H75.2026C74.0023 35.9571 72.8428 35.5151 71.9647 34.7092C71.5422 34.3529 71.2024 33.9114 70.9681 33.4146C70.7339 32.9178 70.6107 32.3773 70.6069 31.8296V28.8472C70.5992 28.2976 70.7173 27.7534 70.9523 27.2549C71.1874 26.7564 71.5334 26.3164 71.9647 25.9676C72.8226 25.163 73.9657 24.7201 75.1504 24.7335H80.0594C80.837 24.7169 81.6125 24.821 82.3572 25.042C82.8942 25.1856 83.3815 25.47 83.7673 25.8647C84.0474 26.1701 84.2765 26.5172 84.4462 26.8932C84.5706 27.2584 84.641 27.6394 84.6551 28.0244C84.6637 28.3339 84.6463 28.6434 84.6029 28.95C84.5371 29.2535 84.4318 29.5473 84.2895 29.8242C84.12 30.1546 83.8685 30.4376 83.5584 30.6469C83.1711 30.8951 82.7488 31.0857 82.305 31.2126C81.6736 31.3685 81.0234 31.4377 80.3727 31.4182H75.6726ZM80.8428 26.6361H75.307C75.1136 26.6585 74.9217 26.6928 74.7326 26.7389C74.5286 26.7672 74.3329 26.8372 74.1581 26.9446C74.006 27.0685 73.8661 27.2062 73.7403 27.356C73.6278 27.5793 73.5739 27.8268 73.5836 28.0759C73.5883 28.2686 73.6235 28.4595 73.6881 28.6415C73.7436 28.7957 73.8327 28.9361 73.9492 29.0529C74.0809 29.15 74.2206 29.236 74.367 29.31C74.5172 29.3685 74.6758 29.4033 74.837 29.4128C74.9937 29.4128 75.0981 29.4642 75.2026 29.4642H80.3205C81.6261 29.4642 82.305 29.0014 82.305 28.0244C82.3054 27.83 82.2637 27.6376 82.1827 27.4603C82.1016 27.283 81.9831 27.1247 81.835 26.996C81.5631 26.7557 81.208 26.6269 80.8428 26.6361ZM91.8619 24.8363H96.0921L95.2565 27.2017H93.2198C92.6572 27.201 92.1 27.3096 91.5802 27.5213C91.0603 27.7329 90.588 28.0435 90.1902 28.4352C89.7924 28.8269 89.477 29.292 89.262 29.8038C89.047 30.3157 88.9367 30.8643 88.9374 31.4182V35.9947H85.8562V24.8363H88.9896V26.7903L89.4597 26.1219C89.7269 25.7215 90.0843 25.3871 90.5041 25.1448C90.9223 24.9288 91.3899 24.8225 91.8619 24.8363ZM108.051 30.287C108.624 30.9361 108.939 31.7669 108.939 32.6266C108.939 33.4863 108.624 34.3171 108.051 34.9663C107.752 35.2971 107.38 35.5569 106.964 35.7261C106.548 35.8953 106.098 35.9695 105.649 35.9433H96.5099L97.1366 34.0407H105.127C105.304 34.0384 105.478 34.0007 105.64 33.93C105.801 33.8593 105.947 33.757 106.067 33.6294C106.189 33.5082 106.285 33.3635 106.348 33.2042C106.411 33.0449 106.44 32.8745 106.432 32.7038C106.438 32.3447 106.308 31.9964 106.067 31.7268C105.972 31.5992 105.845 31.4986 105.699 31.4354C105.552 31.3721 105.39 31.3484 105.231 31.3668H99.6433C99.2017 31.3928 98.7599 31.3182 98.3523 31.1487C97.9447 30.9793 97.5823 30.7196 97.2932 30.3898C96.6892 29.7662 96.3522 28.9376 96.3522 28.0759C96.3522 27.2141 96.6892 26.3855 97.2932 25.7619C97.5746 25.423 97.9358 25.1569 98.3453 24.9867C98.7548 24.8164 99.2004 24.7471 99.6433 24.7849H108.051L107.477 26.6875H100.27C100.111 26.6756 99.9523 26.7021 99.8066 26.7649C99.6609 26.8277 99.5331 26.9247 99.4344 27.0474C99.3119 27.1686 99.2162 27.3133 99.1533 27.4726C99.0904 27.6319 99.0616 27.8023 99.0688 27.973C99.0602 28.3081 99.1711 28.6356 99.3822 28.8986C99.5024 29.0263 99.6477 29.1286 99.8093 29.1993C99.9709 29.27 100.145 29.3077 100.322 29.31H105.701C106.141 29.2958 106.579 29.3758 106.985 29.5444C107.391 29.7131 107.755 29.9665 108.051 30.287ZM123.092 25.6591C123.764 26.4651 124.083 27.5009 123.98 28.5386V35.9947H121.003V34.5549C119.801 35.4602 118.338 35.9645 116.825 35.9947H113.378C112.878 36.0202 112.377 35.9418 111.909 35.7646C111.441 35.5875 111.017 35.3155 110.662 34.9663C110.329 34.6668 110.063 34.3013 109.883 33.8936C109.703 33.486 109.613 33.0454 109.618 32.6009C109.596 32.1466 109.678 31.6931 109.859 31.2746C110.04 30.856 110.314 30.4832 110.662 30.1841C111.007 29.8083 111.425 29.5052 111.892 29.2931C112.359 29.081 112.864 28.9643 113.378 28.95H121.003V28.7958C121.007 28.5657 120.962 28.3374 120.872 28.125C120.783 27.9127 120.649 27.7209 120.481 27.5616C120.308 27.3804 120.097 27.24 119.862 27.1509C119.626 27.0618 119.374 27.0264 119.123 27.0474H110.401L111.028 24.7849H120.637C121.085 24.7562 121.535 24.819 121.957 24.9694C122.38 25.1199 122.766 25.3547 123.092 25.6591ZM121.003 32.3438V30.7498H114.37C114.137 30.7459 113.905 30.7896 113.689 30.8781C113.474 30.9666 113.279 31.0979 113.117 31.264C112.962 31.4201 112.841 31.6052 112.76 31.8084C112.679 32.0115 112.641 32.2286 112.647 32.4467C112.644 32.8855 112.813 33.3087 113.117 33.6294C113.289 33.7964 113.493 33.9279 113.717 34.0162C113.941 34.1045 114.181 34.1478 114.423 34.1436H116.668C117.477 34.1486 118.278 33.9917 119.023 33.6823C119.768 33.3729 120.442 32.9175 121.003 32.3438Z" fill="#262626" />
+										<mask id="mask0_399_9104" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="49" height="36">
+											<path d="M48.5681 0H0V35.9949H48.5681V0Z" fill="white" />
+										</mask>
+										<g mask="url(#mask0_399_9104)">
+											<path d="M41.2027 0L25.3789 35.9949H33.3169L48.6185 0H41.2027Z" fill="#25A4C4" />
+											<path d="M25.3791 35.9949L9.81641 0H17.5977L29.3481 26.9447L25.3791 35.9949Z" fill="#E84027" />
+											<path d="M31.3863 0L15.5625 35.9949H23.5005L38.8021 0H31.3863Z" fill="#25A4C4" />
+											<path d="M15.5627 35.9949L0 0H7.78133L19.5317 26.9447L15.5627 35.9949Z" fill="#E84027" />
+										</g>
+									</g>
+									<defs>
+										<clipPath id="clip0_399_9104">
+											<rect width="124" height="36" fill="white" />
+										</clipPath>
+									</defs>
+								</svg>
+							</div>
+							<div class="header-menu__wrap">
+								<div class="menu-contacts menu-contacts--nav">
+									<div class="menu-contacts__title">
+										Меню
+									</div>
+									<ul class="header-menu__nav">
+										<li>
+											<a href="index.html" class="header-menu__link header-menu__link--marketing">Главная</a>
+										</li>
+										<li>
+											<a href="data.html" class="header-menu__link header-menu__link--marketing">Дата
+												сайнс</a>
+										</li>
+										<li>
+											<a href="marketing.html" class="header-menu__link header-menu__link--marketing">Маркетинг</a>
+										</li>
+										<li>
+											<a href="production.html" class="header-menu__link header-menu__link--marketing">Видео
+												продакшн</a>
+										</li>
+									</ul>
+								</div>
+								<div class="header-menu__bottom">
+									<div class="menu-contacts">
+										<div class="menu-contacts__title">
+											Контакты
+										</div>
+										<ul class="menu-contacts__list">
+											<li class="menu-contacts__item">
+												<a href="tel:+74956699271">+7(495) 66-99-271</a>
+											</li>
+											<li class="menu-contacts__item menu-contacts__item--none">
+												<a href="mailto:mailto:mail@mail.ru">mailto:mail@mail.ru</a>
+											</li>
+										</ul>
+										<button type="button" class="b-btn b-btn--orange">Связаться
+										</button>
+									</div>
+									<div class="menu-contacts">
+										<div class="menu-contacts__title">
+											Соцсети
+										</div>
+										<div class="socials socials--menu socials--marketing">
+											<div class="socials__item">
+												<button class="socials__button">
+													<img src="images/icon/youtube.svg" alt="" width="24" height="24">
+												</button>
+											</div>
+											<div class="socials__item">
+												<button class="socials__button">
+													<img src="images/icon/tg.svg" alt="" width="24" height="24">
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="main">
+
+			<section class="production">
+				<div class="production__wrapper">
+					<div class="production__left">
+						<div class="production__text">
+							<p>Мы снимаем контент.Контент</p>
+							<p>увеличивает просмотры.</p>
+							<p>
+								Просмотры дают продажи.
+							</p>
+							<p>
+								Всё просто.
+							</p>
+						</div>
+						<div class="production__buttons">
+							<button type="button" class="b-btn b-btn--main b-btn--transparent">
+								<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M16.25 3.75v7.5h7.5" stroke="#fff" stroke-width="1.5" stroke-linejoin="round" />
+									<path d="M22.871 9.121 18.38 4.63a3 3 0 0 0-2.122-.879H9.25a3 3 0 0 0-3 3v16.5a3 3 0 0 0 3 3h11.5a3 3 0 0 0 3-3V11.243a3 3 0 0 0-.879-2.122Z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+									<path d="M16.772 18.322a3.749 3.749 0 0 1-1.555-1.977c.255-.766.333-1.58.225-2.381a.953.953 0 0 0-.818-.786.948.948 0 0 0-.987.56 5.97 5.97 0 0 0 .297 2.857 34.59 34.59 0 0 1-1.508 3.096c-.843.476-1.995 1.19-2.173 2.012-.142.667 1.105 2.382 3.23-1.333a22.025 22.025 0 0 1 2.898-.858c.727.418 1.539.666 2.374.727a.973.973 0 0 0 .986-1.137.978.978 0 0 0-.25-.506c-.498-.512-1.982-.37-2.719-.274Zm-5.676 3.572a5.14 5.14 0 0 1 1.295-1.476c-.808 1.285-1.295 1.512-1.295 1.488v-.012Zm3.468-8.11c.308 0 .285 1.37.07 1.74a3.666 3.666 0 0 1-.07-1.727v-.012Zm-1.033 5.812c.402-.736.751-1.5 1.045-2.286a4.615 4.615 0 0 0 1.282 1.5c-.797.2-1.575.467-2.327.798v-.012Zm5.58-.215s-.213.262-1.579-.333c1.485-.095 1.734.25 1.58.345v-.012Z" fill="#fff" />
+								</svg>
+								Скачать презентацию
+							</button>
+							<button type="button" class="b-btn b-btn--main b-btn--orange">Связаться</button>
+						</div>
+					</div>
+					<div class="production__main">
+						<h2 class="production__title">
+							<span>Vice Versa</span> Creative lab
+						</h2>
+						<div class="production__about">
+							<p>
+								Создаём прекрасное
+							</p>
+						</div>
+						<ul class="production__socials">
+							<li>
+								<a href="#">
+									<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M17.458 4.418H6.544c-2.14 0-3.876 2.102-3.876 4.696v6.608c0 2.594 1.736 4.696 3.876 4.696h10.914c2.14 0 3.877-2.102 3.877-4.696V9.114c0-2.594-1.736-4.696-3.877-4.696Zm-2.622 8.322-5.104 2.948c-.136.08-.293-.042-.293-.224V9.382c0-.184.16-.304.297-.222l5.104 3.134c.152.093.15.356-.004.445Z" fill="#fff" />
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M22 12.418c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10 10 4.477 10 10ZM12.663 9.78a486.8 486.8 0 0 0-5.907 2.512c-.48.189-.73.373-.753.553-.039.304.347.424.873.587l.221.07c.517.166 1.213.36 1.575.368.328.007.694-.127 1.098-.4 2.76-1.84 4.183-2.769 4.273-2.789.063-.014.15-.032.21.02.059.052.053.15.046.177-.038.16-1.553 1.552-2.337 2.271-.245.225-.418.384-.454.42-.079.082-.16.159-.238.233-.48.457-.84.8.02 1.36.414.27.745.492 1.075.714.36.242.72.484 1.186.785.118.077.232.156.342.234.42.296.796.56 1.262.518.271-.024.55-.275.693-1.025.335-1.77.995-5.608 1.147-7.19a1.739 1.739 0 0 0-.017-.393.42.42 0 0 0-.144-.27c-.121-.098-.309-.118-.392-.117-.381.007-.966.207-3.779 1.362Z" fill="#fff" />
+									</svg>
+								</a>
+							</li>
+						</ul>
+						<button class="production__play" type="button">
+							<svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<circle cx="26" cy="26" r="25" stroke="#fff" stroke-width="2" />
+								<path d="m36.285 26-15.428 8.908V17.092L36.285 26Z" fill="#fff" />
+							</svg>
+						</button>
+					</div>
+				</div>
+			</section>
+
+			<section class="our-works">
+				<div class="container">
+					<div class="our-works__wrapper">
+						<div class="section-title our-works__title">
+							Наши работы
+						</div>
+						<div class="our-works__grid">
+							<div class="our-works__item">
+								<div class="our-works__img">
+									<picture>
+										<source srcset="images/production/works/works-1.webp 1x, images/production/works/works-1@2x.webp 1.3x" type="image/webp">
+										<source srcset="images/production/works/works-1.jpg 1x, images/production/works/works-1@2x.jpg 1.3x" type="image/jpg">
+										<img src="images/production/works/works-1.jpg" alt="" width="290" height="198">
+									</picture>
+								</div>
+								<div class="our-works__about">
+									<div class="our-works__wrap">
+										<div class="our-works__text">
+											Тестовый текст тестовый
+										</div>
+										<div class="our-works__name">
+											Тестовое название
+										</div>
+									</div>
+								</div>
+								<a href="#" class="our-works__link"></a>
+							</div>
+							<div class="our-works__item">
+								<div class="our-works__img">
+									<picture>
+										<source srcset="images/production/works/works-2.webp 1x, images/production/works/works-2@2x.webp 1.3x" type="image/webp">
+										<source srcset="images/production/works/works-2.jpg 1x, images/production/works/works-2@2x.jpg 1.3x" type="image/jpg">
+										<img src="images/production/works/works-2.jpg" alt="" width="290" height="198">
+									</picture>
+								</div>
+								<div class="our-works__about">
+									<div class="our-works__wrap">
+										<div class="our-works__text">
+											Тестовый текст тестовый
+										</div>
+										<div class="our-works__name">
+											Тестовое название
+										</div>
+									</div>
+								</div>
+								<a href="#" class="our-works__link"></a>
+							</div>
+							<div class="our-works__item">
+								<div class="our-works__img">
+									<picture>
+										<source srcset="images/production/works/works-3.webp 1x, images/production/works/works-3@2x.webp 1.3x" type="image/webp">
+										<source srcset="images/production/works/works-3.jpg 1x, images/production/works/works-3@2x.jpg 1.3x" type="image/jpg">
+										<img src="images/production/works/works-3.jpg" alt="" width="290" height="198">
+									</picture>
+								</div>
+								<div class="our-works__about">
+									<div class="our-works__wrap">
+										<div class="our-works__text">
+											Тестовый текст тестовый
+										</div>
+										<div class="our-works__name">
+											Тестовое название
+										</div>
+									</div>
+								</div>
+								<a href="#" class="our-works__link"></a>
+							</div>
+							<div class="our-works__item">
+								<div class="our-works__img">
+									<picture>
+										<source srcset="images/production/works/works-4.webp 1x, images/production/works/works-4@2x.webp 1.3x" type="image/webp">
+										<source srcset="images/production/works/works-4.jpg 1x, images/production/works/works-4@2x.jpg 1.3x" type="image/jpg">
+										<img src="images/production/works/works-4.jpg" alt="" width="290" height="198">
+									</picture>
+								</div>
+								<div class="our-works__about">
+									<div class="our-works__wrap">
+										<div class="our-works__text">
+											Тестовый текст тестовый
+										</div>
+										<div class="our-works__name">
+											Тестовое название
+										</div>
+									</div>
+								</div>
+								<a href="#" class="our-works__link"></a>
+							</div>
+							<div class="our-works__item">
+								<div class="our-works__img">
+									<picture>
+										<source srcset="images/production/works/works-5.webp 1x, images/production/works/works-5@2x.webp 1.3x" type="image/webp">
+										<source srcset="images/production/works/works-5.jpg 1x, images/production/works/works-5@2x.jpg 1.3x" type="image/jpg">
+										<img src="images/production/works/works-5.jpg" alt="" width="290" height="198">
+									</picture>
+								</div>
+								<div class="our-works__about">
+									<div class="our-works__wrap">
+										<div class="our-works__text">
+											Тестовый текст тестовый
+										</div>
+										<div class="our-works__name">
+											Тестовое название
+										</div>
+									</div>
+								</div>
+								<a href="#" class="our-works__link"></a>
+							</div>
+							<div class="our-works__item">
+								<div class="our-works__img">
+									<picture>
+										<source srcset="images/production/works/works-6.webp 1x, images/production/works/works-6@2x.webp 1.3x" type="image/webp">
+										<source srcset="images/production/works/works-6.jpg 1x, images/production/works/works-6@2x.jpg 1.3x" type="image/jpg">
+										<img src="images/production/works/works-6.jpg" alt="" width="290" height="198">
+									</picture>
+								</div>
+								<div class="our-works__about">
+									<div class="our-works__wrap">
+										<div class="our-works__text">
+											Тестовый текст тестовый
+										</div>
+										<div class="our-works__name">
+											Тестовое название
+										</div>
+									</div>
+								</div>
+								<a href="#" class="our-works__link"></a>
+							</div>
+							<div class="our-works__item">
+								<div class="our-works__img">
+									<picture>
+										<source srcset="images/production/works/works-7.webp 1x, images/production/works/works-7@2x.webp 1.3x" type="image/webp">
+										<source srcset="images/production/works/works-7.jpg 1x, images/production/works/works-7@2x.jpg 1.3x" type="image/jpg">
+										<img src="images/production/works/works-7.jpg" alt="" width="290" height="198">
+									</picture>
+								</div>
+								<div class="our-works__about">
+									<div class="our-works__wrap">
+										<div class="our-works__text">
+											Тестовый текст тестовый
+										</div>
+										<div class="our-works__name">
+											Тестовое название
+										</div>
+									</div>
+								</div>
+								<a href="#" class="our-works__link"></a>
+							</div>
+							<div class="our-works__item">
+								<div class="our-works__img">
+									<picture>
+										<source srcset="images/production/works/works-8.webp 1x, images/production/works/works-8@2x.webp 1.3x" type="image/webp">
+										<source srcset="images/production/works/works-8.jpg 1x, images/production/works/works-8@2x.jpg 1.3x" type="image/jpg">
+										<img src="images/production/works/works-8.jpg" alt="" width="290" height="198">
+									</picture>
+								</div>
+								<div class="our-works__about">
+									<div class="our-works__wrap">
+										<div class="our-works__text">
+											Тестовый текст тестовый
+										</div>
+										<div class="our-works__name">
+											Тестовое название
+										</div>
+									</div>
+								</div>
+								<a href="#" class="our-works__link"></a>
+							</div>
+							<div class="our-works__item">
+								<div class="our-works__img">
+									<picture>
+										<source srcset="images/production/works/works-9.webp 1x, images/production/works/works-9@2x.webp 1.3x" type="image/webp">
+										<source srcset="images/production/works/works-9.jpg 1x, images/production/works/works-9@2x.jpg 1.3x" type="image/jpg">
+										<img src="images/production/works/works-9.jpg" alt="" width="290" height="198">
+									</picture>
+								</div>
+								<div class="our-works__about">
+									<div class="our-works__wrap">
+										<div class="our-works__text">
+											Тестовый текст тестовый
+										</div>
+										<div class="our-works__name">
+											Тестовое название
+										</div>
+									</div>
+								</div>
+								<a href="#" class="our-works__link"></a>
+							</div>
+							<div class="our-works__item">
+								<div class="our-works__img">
+									<picture>
+										<source srcset="images/production/works/works-10.webp 1x, images/production/works/works-10@2x.webp 1.3x" type="image/webp">
+										<source srcset="images/production/works/works-10.jpg 1x, images/production/works/works-10@2x.jpg 1.3x" type="image/jpg">
+										<img src="images/production/works/works-10.jpg" alt="" width="290" height="198">
+									</picture>
+								</div>
+								<div class="our-works__about">
+									<div class="our-works__wrap">
+										<div class="our-works__text">
+											Тестовый текст тестовый
+										</div>
+										<div class="our-works__name">
+											Тестовое название
+										</div>
+									</div>
+								</div>
+								<a href="#" class="our-works__link"></a>
+							</div>
+							<div class="our-works__item">
+								<div class="our-works__img">
+									<picture>
+										<source srcset="images/production/works/works-11.webp 1x, images/production/works/works-11@2x.webp 1.3x" type="image/webp">
+										<source srcset="images/production/works/works-11.jpg 1x, images/production/works/works-11@2x.jpg 1.3x" type="image/jpg">
+										<img src="images/production/works/works-11.jpg" alt="" width="290" height="198">
+									</picture>
+								</div>
+								<div class="our-works__about">
+									<div class="our-works__wrap">
+										<div class="our-works__text">
+											Тестовый текст тестовый
+										</div>
+										<div class="our-works__name">
+											Тестовое название
+										</div>
+									</div>
+								</div>
+								<a href="#" class="our-works__link"></a>
+							</div>
+							<button type="button" class="our-works__btn">
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 3C1.5 2.17157 2.17157 1.5 3 1.5H13C13.8284 1.5 14.5 2.17158 14.5 3V13C14.5 13.8284 13.8284 14.5 13 14.5H3C2.17158 14.5 1.5 13.8284 1.5 13V3ZM3 2.5C2.72386 2.5 2.5 2.72386 2.5 3V13C2.5 13.2762 2.72385 13.5 3 13.5H13C13.2762 13.5 13.5 13.2762 13.5 13V3C13.5 2.72385 13.2762 2.5 13 2.5H3Z" fill="#EE3F22" />
+									<path d="M5.9987 7.66659C6.91916 7.66659 7.66536 6.92039 7.66536 5.99992C7.66536 5.07945 6.91916 4.33325 5.9987 4.33325C5.07823 4.33325 4.33203 5.07945 4.33203 5.99992C4.33203 6.92039 5.07823 7.66659 5.9987 7.66659Z" fill="#EE3F22" />
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M3.83203 5.99992C3.83203 4.80331 4.80209 3.83325 5.9987 3.83325C7.19531 3.83325 8.16537 4.80331 8.16537 5.99992C8.16537 7.19653 7.19531 8.16659 5.9987 8.16659C4.80209 8.16659 3.83203 7.19653 3.83203 5.99992ZM5.9987 4.83325C5.35437 4.83325 4.83203 5.35559 4.83203 5.99992C4.83203 6.64424 5.35437 7.16659 5.9987 7.16659C6.64302 7.16659 7.16536 6.64424 7.16536 5.99992C7.16536 5.35559 6.64302 4.83325 5.9987 4.83325Z" fill="#EE3F22" />
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M9.99888 8.2951C10.1897 8.12332 10.4797 8.12405 10.6697 8.29678L14.3364 11.6301C14.5407 11.8159 14.5558 12.1321 14.37 12.3364C14.1842 12.5407 13.868 12.5558 13.6637 12.3701L10.3317 9.34095L7.33451 12.0384C7.14779 12.2064 6.86537 12.2099 6.67463 12.0464L4.64583 10.3074L2.30003 12.0667C2.07912 12.2324 1.76571 12.1877 1.60003 11.9667C1.43434 11.7458 1.47912 11.4324 1.70003 11.2667L4.3667 9.26675C4.55418 9.12614 4.81416 9.13461 4.99209 9.28712L6.99198 11.0013L9.99888 8.2951Z" fill="#EE3F22" />
+								</svg>
+								<span>
+									Больше проектов
+								</span>
+								<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M4.68829 6.83101C4.93934 6.57996 5.34637 6.57996 5.59743 6.83101L10.2857 11.5193L14.974 6.83101C15.2251 6.57995 15.6321 6.57995 15.8831 6.83101C16.1342 7.08206 16.1342 7.48909 15.8831 7.74014L10.7403 12.883C10.4892 13.1341 10.0822 13.1341 9.83115 12.883L4.68829 7.74014C4.43724 7.48909 4.43724 7.08206 4.68829 6.83101Z" fill="white" />
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="marketing marketing--white" id="object">
+				<div class="marketing__container">
+					<div class="marketing__wrapper">
+						<div class="marketing__info">
+							<h2 class="section-title marketing__title">
+								Предметная съемка
+							</h2>
+							<div class="marketing__text">
+								<p>
+									Провели 3500+ съемок.
+									Все для баннеров и рекламы, съемка для маркетплейсов, продуктовая съемка для соц.сетей, карточки
+									товаров для сайта, лукбуки.
+								</p>
+								<p>
+									Качественная предметная съемка кратно увеличивает CTR и AdRecall.
+									Четко исходим из бизнес задач.
+									Контент ради контента – для нас плохой контент.
+									Быстро стартуем. Быстро отдаем.
+								</p>
+							</div>
+							<div class="marketing__wrap">
+								<div class="marketing__items">
+									<div class="marketing__item">
+										<div class="marketing__num">
+											до<span>+20</span>%
+										</div>
+										<div class="marketing__about">
+											CTR Web
+										</div>
+									</div>
+									<div class="marketing__item">
+										<div class="marketing__num">
+											+<span>12</span>%
+										</div>
+										<div class="marketing__about">
+											Ad Recall
+										</div>
+									</div>
+									<div class="marketing__item">
+										<div class="marketing__num">
+											+<span>11</span>%
+										</div>
+										<div class="marketing__about">
+											Время на сайте
+										</div>
+									</div>
+								</div>
+								<div class="marketing__buttons">
+									<button class="b-btn b-btn--main b-btn--orange">Обсудить задачу</button>
+								</div>
+							</div>
+						</div>
+						<div class="marketing__grid">
+							<picture>
+								<source srcset="images/production/shooting/object-1.webp 1x, images/production/shooting/object-1@2x.webp 1.3x" type="image/webp">
+								<source srcset="images/production/shooting/object-1.jpg 1x, images/production/shooting/object-1@2x.jpg 1.3x" type="image/jpg">
+								<img src="images/production/shooting/object-1.jpg" alt="" width="234" height="227">
+							</picture>
+							<picture>
+								<source srcset="images/production/shooting/object-2.webp 1x, images/production/shooting/object-2@2x.webp 1.3x" type="image/webp">
+								<source srcset="images/production/shooting/object-2.jpg 1x, images/production/shooting/object-2@2x.jpg 1.3x" type="image/jpg">
+								<img src="images/production/shooting/object-2.jpg" alt="" width="234" height="227">
+							</picture>
+							<picture>
+								<source srcset="images/production/shooting/object-3.webp 1x, images/production/shooting/object-3@2x.webp 1.3x" type="image/webp">
+								<source srcset="images/production/shooting/object-3.jpg 1x, images/production/shooting/object-3@2x.jpg 1.3x" type="image/jpg">
+								<img src="images/production/shooting/object-3.jpg" alt="" width="234" height="227">
+							</picture>
+							<picture>
+								<source srcset="images/production/shooting/object-4.webp 1x, images/production/shooting/object-4@2x.webp 1.3x" type="image/webp">
+								<source srcset="images/production/shooting/object-4.jpg 1x, images/production/shooting/object-4@2x.jpg 1.3x" type="image/jpg">
+								<img src="images/production/shooting/object-4.jpg" alt="" width="234" height="227">
+							</picture>
+							<picture>
+								<source srcset="images/production/shooting/object-5.webp 1x, images/production/shooting/object-5@2x.webp 1.3x" type="image/webp">
+								<source srcset="images/production/shooting/object-5.jpg 1x, images/production/shooting/object-5@2x.jpg 1.3x" type="image/jpg">
+								<img src="images/production/shooting/object-5.jpg" alt="" width="234" height="227">
+							</picture>
+							<picture>
+								<source srcset="images/production/shooting/object-6.webp 1x, images/production/shooting/object-6@2x.webp 1.3x" type="image/webp">
+								<source srcset="images/production/shooting/object-6.jpg 1x, images/production/shooting/object-6@2x.jpg 1.3x" type="image/jpg">
+								<img src="images/production/shooting/object-6.jpg" alt="" width="234" height="227">
+							</picture>
+							<picture>
+								<source srcset="images/production/shooting/object-7.webp 1x, images/production/shooting/object-7@2x.webp 1.3x" type="image/webp">
+								<source srcset="images/production/shooting/object-7.jpg 1x, images/production/shooting/object-7@2x.jpg 1.3x" type="image/jpg">
+								<img src="images/production/shooting/object-7.jpg" alt="" width="234" height="227">
+							</picture>
+							<picture>
+								<source srcset="images/production/shooting/object-8.webp 1x, images/production/shooting/object-8@2x.webp 1.3x" type="image/webp">
+								<source srcset="images/production/shooting/object-8.jpg 1x, images/production/shooting/object-8@2x.jpg 1.3x" type="image/jpg">
+								<img src="images/production/shooting/object-8.jpg" alt="" width="234" height="227">
+							</picture>
+							<picture>
+								<source srcset="images/production/shooting/object-9.webp 1x, images/production/shooting/object-9@2x.webp 1.3x" type="image/webp">
+								<source srcset="images/production/shooting/object-9.jpg 1x, images/production/shooting/object-9@2x.jpg 1.3x" type="image/jpg">
+								<img src="images/production/shooting/object-9.jpg" alt="" width="234" height="227">
+							</picture>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="marketing marketing--reverse marketing--white" id="interio">
+				<div class="marketing__container marketing__container--reverse">
+					<div class="marketing__wrapper marketing__wrapper--reverse">
+						<div class="marketing__grid">
+							<picture>
+								<source srcset="images/production/interio/interio-1.webp 1x, images/production/interio/interio-1@2x.webp 1.3x" type="image/webp">
+								<source srcset="images/production/interio/interio-1.jpg 1x, images/production/interio/interio-1@2x.jpg 1.3x" type="image/jpg">
+								<img src="images/production/interio/interio-1.jpg" alt="" width="234" height="227">
+							</picture>
+							<picture>
+								<source srcset="images/production/interio/interio-2.webp 1x, images/production/interio/interio-2@2x.webp 1.3x" type="image/webp">
+								<source srcset="images/production/interio/interio-2.jpg 1x, images/production/interio/interio-2@2x.jpg 1.3x" type="image/jpg">
+								<img src="images/production/interio/interio-2.jpg" alt="" width="234" height="227">
+							</picture>
+							<picture>
+								<source srcset="images/production/interio/interio-3.webp 1x, images/production/interio/interio-3@2x.webp 1.3x" type="image/webp">
+								<source srcset="images/production/interio/interio-3.jpg 1x, images/production/interio/interio-3@2x.jpg 1.3x" type="image/jpg">
+								<img src="images/production/interio/interio-3.jpg" alt="" width="234" height="227">
+							</picture>
+							<picture>
+								<source srcset="images/production/interio/interio-4.webp 1x, images/production/interio/interio-4@2x.webp 1.3x" type="image/webp">
+								<source srcset="images/production/interio/interio-4.jpg 1x, images/production/interio/interio-4@2x.jpg 1.3x" type="image/jpg">
+								<img src="images/production/interio/interio-4.jpg" alt="" width="234" height="227">
+							</picture>
+							<picture>
+								<source srcset="images/production/interio/interio-5.webp 1x, images/production/interio/interio-5@2x.webp 1.3x" type="image/webp">
+								<source srcset="images/production/interio/interio-5.jpg 1x, images/production/interio/interio-5@2x.jpg 1.3x" type="image/jpg">
+								<img src="images/production/interio/interio-5.jpg" alt="" width="234" height="227">
+							</picture>
+							<picture>
+								<source srcset="images/production/interio/interio-6.webp 1x, images/production/interio/interio-6@2x.webp 1.3x" type="image/webp">
+								<source srcset="images/production/interio/interio-6.jpg 1x, images/production/interio/interio-6@2x.jpg 1.3x" type="image/jpg">
+								<img src="images/production/interio/interio-6.jpg" alt="" width="234" height="227">
+							</picture>
+							<picture>
+								<source srcset="images/production/interio/interio-7.webp 1x, images/production/interio/interio-7@2x.webp 1.3x" type="image/webp">
+								<source srcset="images/production/interio/interio-7.jpg 1x, images/production/interio/interio-7@2x.jpg 1.3x" type="image/jpg">
+								<img src="images/production/interio/interio-7.jpg" alt="" width="234" height="227">
+							</picture>
+							<picture>
+								<source srcset="images/production/interio/interio-8.webp 1x, images/production/interio/interio-8@2x.webp 1.3x" type="image/webp">
+								<source srcset="images/production/interio/interio-8.jpg 1x, images/production/interio/interio-8@2x.jpg 1.3x" type="image/jpg">
+								<img src="images/production/interio/interio-8.jpg" alt="" width="234" height="227">
+							</picture>
+							<picture>
+								<source srcset="images/production/interio/interio-9.webp 1x, images/production/interio/interio-9@2x.webp 1.3x" type="image/webp">
+								<source srcset="images/production/interio/interio-9.jpg 1x, images/production/interio/interio-9@2x.jpg 1.3x" type="image/jpg">
+								<img src="images/production/interio/interio-9.jpg" alt="" width="234" height="227">
+							</picture>
+						</div>
+						<div class="marketing__info">
+							<h2 class="section-title marketing__title">
+								Интерьерная съемка
+							</h2>
+							<div class="marketing__text">
+								<p>
+									За 10 лет проведено около 200 интерьерных съемок – для торговых центров, презентаций, сайтов,
+									отчетов, баннеров и рекламных кампаний.
+									Качественная интерьерная съемка повышает интерес к месту, показывает все лучшие стороны локации,
+									привлекает новых посетителей и увеличивает отклики на объявления о продаже помещений/зданий.
+									Мы знаем всё про правильные углы, геометрию, пространство и панорамные вертикали.
+								</p>
+							</div>
+							<div class="marketing__wrap marketing__wrap--reverse">
+								<div class="marketing__buttons">
+									<button class="b-btn b-btn--main b-btn--orange">Связаться</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="marketing marketing--white" id="creative">
+				<div class="marketing__container">
+					<div class="marketing__wrapper">
+						<div class="marketing__info">
+							<h2 class="section-title marketing__title">
+								Креативная съемка
+							</h2>
+							<div class="marketing__text">
+								<p>
+									Самые сложные и самые интересные проекты. Креатив привлекает внимание, задаёт тренды и
+									обсуждения, помогает привлечь повышенное внимание к продукту – мы вникаем в суть, приносим новые
+									смыслы, формы, цвета и ощущения для того, чтобы передать всё лучшее, что есть в вашем продукте.
+									Самое главное, что нужно знать – мы не продаём креатив, но креатив – продаёт.
+								</p>
+							</div>
+							<div class="marketing__wrap">
+								<div class="marketing__buttons">
+									<button class="b-btn b-btn--main b-btn--orange">Обсудить задачу</button>
+								</div>
+							</div>
+						</div>
+						<div class="marketing__grid">
+							<picture>
+								<source srcset="images/production/creative/creative-1.webp 1x, images/production/creative/creative-1@2x.webp 1.3x" type="image/webp">
+								<source srcset="images/production/creative/creative-1.jpg 1x, images/production/creative/creative-1@2x.jpg 1.3x" type="image/jpg">
+								<img src="images/production/creative/creative-1.jpg" alt="" width="234" height="227">
+							</picture>
+							<picture>
+								<source srcset="images/production/creative/creative-2.webp 1x, images/production/creative/creative-2@2x.webp 1.3x" type="image/webp">
+								<source srcset="images/production/creative/creative-2.jpg 1x, images/production/creative/creative-2@2x.jpg 1.3x" type="image/jpg">
+								<img src="images/production/creative/creative-2.jpg" alt="" width="234" height="227">
+							</picture>
+							<picture>
+								<source srcset="images/production/creative/creative-3.webp 1x, images/production/creative/creative-3@2x.webp 1.3x" type="image/webp">
+								<source srcset="images/production/creative/creative-3.jpg 1x, images/production/creative/creative-3@2x.jpg 1.3x" type="image/jpg">
+								<img src="images/production/creative/creative-3.jpg" alt="" width="234" height="227">
+							</picture>
+							<picture>
+								<source srcset="images/production/creative/creative-4.webp 1x, images/production/creative/creative-4@2x.webp 1.3x" type="image/webp">
+								<source srcset="images/production/creative/creative-4.jpg 1x, images/production/creative/creative-4@2x.jpg 1.3x" type="image/jpg">
+								<img src="images/production/creative/creative-4.jpg" alt="" width="234" height="227">
+							</picture>
+							<picture>
+								<source srcset="images/production/creative/creative-5.webp 1x, images/production/creative/creative-5@2x.webp 1.3x" type="image/webp">
+								<source srcset="images/production/creative/creative-5.jpg 1x, images/production/creative/creative-5@2x.jpg 1.3x" type="image/jpg">
+								<img src="images/production/creative/creative-5.jpg" alt="" width="234" height="227">
+							</picture>
+							<picture>
+								<source srcset="images/production/creative/creative-6.webp 1x, images/production/creative/creative-6@2x.webp 1.3x" type="image/webp">
+								<source srcset="images/production/creative/creative-6.jpg 1x, images/production/creative/creative-6@2x.jpg 1.3x" type="image/jpg">
+								<img src="images/production/creative/creative-6.jpg" alt="" width="234" height="227">
+							</picture>
+							<picture>
+								<source srcset="images/production/creative/creative-7.webp 1x, images/production/creative/creative-7@2x.webp 1.3x" type="image/webp">
+								<source srcset="images/production/creative/creative-7.jpg 1x, images/production/creative/creative-7@2x.jpg 1.3x" type="image/jpg">
+								<img src="images/production/creative/creative-7.jpg" alt="" width="234" height="227">
+							</picture>
+							<picture>
+								<source srcset="images/production/shooting/object-8.webp 1x, images/production/shooting/object-8@2x.webp 1.3x" type="image/webp">
+								<source srcset="images/production/shooting/object-8.jpg 1x, images/production/shooting/object-8@2x.jpg 1.3x" type="image/jpg">
+								<img src="images/production/shooting/object-8.jpg" alt="" width="234" height="227">
+							</picture>
+							<picture>
+								<source srcset="images/production/shooting/object-9.webp 1x, images/production/shooting/object-9@2x.webp 1.3x" type="image/webp">
+								<source srcset="images/production/shooting/object-9.jpg 1x, images/production/shooting/object-9@2x.jpg 1.3x" type="image/jpg">
+								<img src="images/production/shooting/object-9.jpg" alt="" width="234" height="227">
+							</picture>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+		</main>
+		<!-- Footer -->
+		<footer class="footer footer--production" id="footer">
+			<div class="footer-top">
+				<div class="container">
+					<div class="footer-top__wrapper">
+						<div class="footer-top__left">
+							<h2 class="section-title footer-top__title">
+								Контакты
+							</h2>
+							<ul class="footer-contacts footer-contacts--main">
+								<li class="footer-contacts__item">
+									<div class="footer-contacts__name">
+										Телефон
+									</div>
+									<a href="tel:8800444824" class="footer-contacts__link">8 (800) 444 824</a>
+								</li>
+								<li class="footer-contacts__item">
+									<div class="footer-contacts__name">
+										Почта
+									</div>
+									<a href="mailto:mailto:Info@vice-versa.agency" class="footer-contacts__link">Info@vice-versa.agency</a>
+								</li>
+								<li class="footer-contacts__item">
+									<div class="footer-contacts__name">
+										Соцсети
+									</div>
+									<div class="socials socials--marketing">
+										<div class="socials__item">
+											<button class="socials__button">
+												<img src="images/icon/youtube.svg" alt="" width="24" height="24">
+											</button>
+										</div>
+										<div class="socials__item">
+											<button class="socials__button">
+												<img src="images/icon/tg.svg" alt="" width="24" height="24">
+											</button>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="footer-top__right">
+							<h2 class="section-title footer-top__secondtitle">
+								Cвяжитесь с нами
+							</h2>
+							<div class="footer-top__text">
+								<p>
+									Задайте интересующий вас вопрос, и мы обязательно ответим на него в ближайшее время
+								</p>
+							</div>
+							<div class="footer-top__form">
+								<form action="#" class="form form--production" id="main-form">
+									<div class="form__row">
+										<label for="" class="form__label">
+											<input type="text" class="form__input" placeholder="Ваше имя">
+										</label>
+									</div>
+									<div class="form__row">
+										<label for="" class="form__label">
+											<input type="text" class="form__input" placeholder="Номер телефона">
+										</label>
+									</div>
+									<div class="form__row">
+										<label for="" class="form__label">
+											<textarea class="form__textarea" name="" id="" cols="30" rows="3" placeholder="Напишите ваш вопрос"></textarea>
+										</label>
+									</div>
+									<button type="button" class="b-btn b-btn--secondary b-btn--orange-secondary">
+										<span>Оставить заявку</span>
+									</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="container">
+					<div class="footer-bottom__wrapper">
+						<a href="#" class="footer-bottom__link">
+							©companyname
+						</a>
+						<a href="#header" class="button-top button-top--marketing js-smooth-scroll">
+							<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<circle cx="24" cy="24" r="23.5" transform="rotate(-90 24 24)" stroke="white" />
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M29.5969 25.7403C29.3458 25.9913 28.9388 25.9913 28.6877 25.7403L23.9994 21.052L19.3112 25.7403C19.0601 25.9913 18.6531 25.9913 18.402 25.7403C18.151 25.4892 18.151 25.0822 18.402 24.8311L23.5449 19.6883C23.7959 19.4372 24.203 19.4372 24.454 19.6883L29.5969 24.8311C29.8479 25.0822 29.8479 25.4892 29.5969 25.7403Z" fill="white" />
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<div class="overlay js-overlay"></div>
+	<div class="popup popup--connection js-popup" data-popup="connection-popup">
+		<button type="button" class="popup__close js-popup-close">
+			<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M17.6316 15.9997L22.5213 20.8894C22.9713 21.3395 22.9713 22.0692 22.5213 22.5193C22.0712 22.9694 21.3414 22.9694 20.8914 22.5193L16.0017 17.6296L11.112 22.5193C10.6619 22.9694 9.93218 22.9694 9.48209 22.5193C9.03201 22.0692 9.03201 21.3395 9.48209 20.8894L14.3718 15.9997L9.48209 11.11C9.03201 10.66 9.03201 9.93022 9.48209 9.48014C9.93218 9.03006 10.6619 9.03006 11.112 9.48014L16.0017 14.3698L20.8914 9.48014C21.3414 9.03006 22.0712 9.03006 22.5213 9.48014C22.9713 9.93022 22.9713 10.66 22.5213 11.11L17.6316 15.9997Z" fill="#232323" />
+			</svg>
+		</button>
+		<div class="popup__wrap">
+			<div class="connection">
+				<div class="connection__left">
+					<div class="connection__wrap">
+						<h3 class="connection__title">
+							Cвяжитесь
+							с нами
+						</h3>
+						<div class="connection__text">
+							<p>
+								Задайте интересующий вас вопрос, и мы обязательно ответим на него в ближайшее время
+							</p>
+						</div>
+					</div>
+					<img class="connection__logo" src="images/icon/logo.svg" alt="" width="124" height="36">
+				</div>
+				<div class="connection__right">
+					<form action="#" class="form form--white" id="main-form">
+						<div class="form__row">
+							<label for="" class="form__label">
+								<input type="text" class="form__input" placeholder="Ваше имя">
+							</label>
+						</div>
+						<div class="form__row">
+							<label for="" class="form__label">
+								<input type="text" class="form__input" placeholder="Номер телефона">
+							</label>
+						</div>
+						<div class="form__row">
+							<label for="" class="form__label">
+								<textarea class="form__textarea" name="" id="" cols="30" rows="3" placeholder="Напишите ваш вопрос"></textarea>
+							</label>
+						</div>
+						<button type="button" class="b-btn b-btn--secondary b-btn--secondary-blue">
+							<span>Оставить заявку</span>
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="popup popup--connection js-popup" data-popup="connection-blue">
+		<button type="button" class="popup__close js-popup-close">
+			<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M17.6316 15.9997L22.5213 20.8894C22.9713 21.3395 22.9713 22.0692 22.5213 22.5193C22.0712 22.9694 21.3414 22.9694 20.8914 22.5193L16.0017 17.6296L11.112 22.5193C10.6619 22.9694 9.93218 22.9694 9.48209 22.5193C9.03201 22.0692 9.03201 21.3395 9.48209 20.8894L14.3718 15.9997L9.48209 11.11C9.03201 10.66 9.03201 9.93022 9.48209 9.48014C9.93218 9.03006 10.6619 9.03006 11.112 9.48014L16.0017 14.3698L20.8914 9.48014C21.3414 9.03006 22.0712 9.03006 22.5213 9.48014C22.9713 9.93022 22.9713 10.66 22.5213 11.11L17.6316 15.9997Z" fill="#232323" />
+			</svg>
+		</button>
+		<div class="popup__wrap">
+			<div class="connection">
+				<div class="connection__left">
+					<div class="connection__wrap">
+						<h3 class="connection__title">
+							Cвяжитесь
+							с нами
+						</h3>
+						<div class="connection__text">
+							<p>
+								Задайте интересующий вас вопрос, и мы обязательно ответим на него в ближайшее время
+							</p>
+						</div>
+					</div>
+					<img class="connection__logo" src="images/icon/logo.svg" alt="" width="124" height="36">
+				</div>
+				<div class="connection__right">
+					<form action="#" class="form form--white" id="main-form">
+						<div class="form__row">
+							<label for="" class="form__label">
+								<input type="text" class="form__input" placeholder="Ваше имя">
+							</label>
+						</div>
+						<div class="form__row">
+							<label for="" class="form__label">
+								<input type="text" class="form__input" placeholder="Номер телефона">
+							</label>
+						</div>
+						<div class="form__row">
+							<label for="" class="form__label">
+								<textarea class="form__textarea" name="" id="" cols="30" rows="3" placeholder="Напишите ваш вопрос"></textarea>
+							</label>
+						</div>
+						<button type="button" class="b-btn b-btn--secondary b-btn--secondary-dark">
+							<span>Оставить заявку</span>
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="popup popup--connection js-popup" data-popup="connection-orange">
+		<button type="button" class="popup__close js-popup-close">
+			<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M17.6316 15.9997L22.5213 20.8894C22.9713 21.3395 22.9713 22.0692 22.5213 22.5193C22.0712 22.9694 21.3414 22.9694 20.8914 22.5193L16.0017 17.6296L11.112 22.5193C10.6619 22.9694 9.93218 22.9694 9.48209 22.5193C9.03201 22.0692 9.03201 21.3395 9.48209 20.8894L14.3718 15.9997L9.48209 11.11C9.03201 10.66 9.03201 9.93022 9.48209 9.48014C9.93218 9.03006 10.6619 9.03006 11.112 9.48014L16.0017 14.3698L20.8914 9.48014C21.3414 9.03006 22.0712 9.03006 22.5213 9.48014C22.9713 9.93022 22.9713 10.66 22.5213 11.11L17.6316 15.9997Z" fill="#232323" />
+			</svg>
+		</button>
+		<div class="popup__wrap">
+			<div class="connection">
+				<div class="connection__left">
+					<div class="connection__wrap">
+						<h3 class="connection__title">
+							Cвяжитесь
+							с нами
+						</h3>
+						<div class="connection__text">
+							<p>
+								Задайте интересующий вас вопрос, и мы обязательно ответим на него в ближайшее время
+							</p>
+						</div>
+					</div>
+					<img class="connection__logo" src="images/icon/logo.svg" alt="" width="124" height="36">
+				</div>
+				<div class="connection__right">
+					<form action="#" class="form form--white" id="main-form">
+						<div class="form__row">
+							<label for="" class="form__label">
+								<input type="text" class="form__input" placeholder="Ваше имя">
+							</label>
+						</div>
+						<div class="form__row">
+							<label for="" class="form__label">
+								<input type="text" class="form__input" placeholder="Номер телефона">
+							</label>
+						</div>
+						<div class="form__row">
+							<label for="" class="form__label">
+								<textarea class="form__textarea" name="" id="" cols="30" rows="3" placeholder="Напишите ваш вопрос"></textarea>
+							</label>
+						</div>
+						<button type="button" class="b-btn b-btn--secondary b-btn--secondary-orange">
+							<span>Оставить заявку</span>
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="popup popup--work js-popup" data-popup="works">
+		<button type="button" class="popup__close js-popup-close">
+			<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M17.6316 15.9997L22.5213 20.8894C22.9713 21.3395 22.9713 22.0692 22.5213 22.5193C22.0712 22.9694 21.3414 22.9694 20.8914 22.5193L16.0017 17.6296L11.112 22.5193C10.6619 22.9694 9.93218 22.9694 9.48209 22.5193C9.03201 22.0692 9.03201 21.3395 9.48209 20.8894L14.3718 15.9997L9.48209 11.11C9.03201 10.66 9.03201 9.93022 9.48209 9.48014C9.93218 9.03006 10.6619 9.03006 11.112 9.48014L16.0017 14.3698L20.8914 9.48014C21.3414 9.03006 22.0712 9.03006 22.5213 9.48014C22.9713 9.93022 22.9713 10.66 22.5213 11.11L17.6316 15.9997Z" fill="#232323" />
+			</svg>
+		</button>
+		<div class="popup__wrap">
+			<div class="modal-work">
+				<div class="modal-work__img">
+					<picture>
+						<source srcset="images/home/works/modal/work-modal.webp 1x, images/home/works/modal/work-modal@2x.webp 1.3x" type="image/webp">
+						<source srcset="images/home/works/modal/work-modal.jpg 1x, images/home/works/modal/work-modal@2x.jpg 1.3x" type="image/jpg">
+						<img src="images/home/works/modal/work-modal.jpg" alt="" width="364" height="394">
+					</picture>
+				</div>
+				<div class="modal-work__wrap">
+					<h3 class="modal-work__title">
+						Название
+					</h3>
+					<div class="modal-work__text">
+						<p>
+							We design and build powerful websites with excellent UDesign WordPress Theme in the world.
+							We design and build powerful websites with excellent UDesign WordPress Theme in the world.
+						</p>
+					</div>
+					<button type="button" class="b-btn b-btn--secondary b-btn--blue js-show-popup" data-trigger="connection-popup">
+						<span>
+							Оставить заявку
+						</span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="popup popup--data js-popup" data-popup="data-retail">
+		<button type="button" class="popup__close js-popup-close">
+			<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M17.6316 15.9997L22.5213 20.8894C22.9713 21.3395 22.9713 22.0692 22.5213 22.5193C22.0712 22.9694 21.3414 22.9694 20.8914 22.5193L16.0017 17.6296L11.112 22.5193C10.6619 22.9694 9.93218 22.9694 9.48209 22.5193C9.03201 22.0692 9.03201 21.3395 9.48209 20.8894L14.3718 15.9997L9.48209 11.11C9.03201 10.66 9.03201 9.93022 9.48209 9.48014C9.93218 9.03006 10.6619 9.03006 11.112 9.48014L16.0017 14.3698L20.8914 9.48014C21.3414 9.03006 22.0712 9.03006 22.5213 9.48014C22.9713 9.93022 22.9713 10.66 22.5213 11.11L17.6316 15.9997Z" fill="#232323" />
+			</svg>
+		</button>
+		<div class="popup__wrap">
+			<div class="modal-data">
+				<div class="modal-data__img">
+					<img src="images/data/data/retail/retail.svg" alt="" width="400" height="249">
+				</div>
+				<div class="modal-data__wrap">
+					<div class="modal-data__item">
+						<h3 class="modal-data__title">
+							LaL-моделирование - расширение ЦА
+						</h3>
+						<div class="modal-data__text">
+							<p>
+								Модель, позволяющая расширить ЦА за счет поиска похожих клиентов, алгоритм находит
+								аудиторию, которая похожа на исходную по ряду признаков: пол, возраст, интересы, поведение и
+								др.
+							</p>
+						</div>
+					</div>
+					<div class="modal-data__item">
+						<h3 class="modal-data__title">
+							Модели отклика клиентов на предложение (Response Model)
+						</h3>
+						<div class="modal-data__text">
+							<p>
+								Модель прогнозирования вероятности целевого события / действия клиента при коммуникации и
+								рассылке того или иного промо-инструмента
+							</p>
+						</div>
+					</div>
+					<div class="modal-data__item">
+						<h3 class="modal-data__title">
+							Модели прогнозирования закупок сети
+						</h3>
+						<div class="modal-data__text">
+							<p>
+								модель прогнозирования закупок сети на среднесрочный и долгосрочный период времени
+							</p>
+						</div>
+					</div>
+					<div class="modal-data__item">
+						<h3 class="modal-data__title">
+							Модели ценовой эластичности
+						</h3>
+						<div class="modal-data__text">
+							<p>
+								модель чувствительности спроса к изменению цена на X, руб. в разрезе товарного sku /
+								товарной категории
+							</p>
+						</div>
+					</div>
+					<div class="modal-data__item">
+						<h3 class="modal-data__title">
+							Модели динамического ценообразования
+						</h3>
+						<div class="modal-data__text">
+							<p>
+								модели оптимизации цен с целью максимизации продаж, маржи и других метрик за n-период
+								времени
+							</p>
+						</div>
+					</div>
+					<div class="modal-data__item">
+						<h3 class="modal-data__title">
+							Прогнозирование кол-во заказов
+						</h3>
+						<div class="modal-data__text">
+							<p>
+								прогнозирование кол-во заказов онлайн / оффлайн в разрезе дня дня / недели / месяца /
+								квартала
+							</p>
+						</div>
+					</div>
+					<div class="modal-data__item">
+						<h3 class="modal-data__title">
+							Прогнозирование выручки торговой точки
+						</h3>
+						<div class="modal-data__text">
+							<p>
+								прогнозирование выручки торговой точки в разрезе дня / недели / месяца / квартала
+							</p>
+						</div>
+					</div>
+					<div class="modal-data__item">
+						<h3 class="modal-data__title">
+							Прогнозирование трафика торговой точки
+						</h3>
+						<div class="modal-data__text">
+							<p>
+								прогнозирование кол-во посетителей торговой точки в разрезе дня / недели / месяца
+							</p>
+						</div>
+					</div>
+					<div class="modal-data__item">
+						<h3 class="modal-data__title">
+							Модель прогнозирования оптимального вывода персонала торговой точки
+						</h3>
+						<div class="modal-data__text">
+							<p>
+								Прогнозирования оптимального вывода персонала торговой точки в разрезе дня / недели / месяца
+							</p>
+						</div>
+					</div>
+					<div class="modal-data__item">
+						<h3 class="modal-data__title">
+							LaL-моделирование - расширение ЦА
+						</h3>
+						<div class="modal-data__text">
+							<p>
+								модель, позволяющая расширить ЦА за счет поиска похожих клиентов, алгоритм находит
+								аудиторию, которая похожа на исходную по ряду признаков: пол, возраст, интересы, поведение и
+								др.
+							</p>
+						</div>
+					</div>
+					<div class="modal-data__item">
+						<h3 class="modal-data__title">
+							Модели отклика клиентов на предложение (Response Model)
+						</h3>
+						<div class="modal-data__text">
+							<p>
+								модель прогнозирования вероятности целевого события / действия клиента при коммуникации и
+								рассылке того или иного промо-инструмента
+							</p>
+						</div>
+					</div>
+					<div class="modal-data__item">
+						<h3 class="modal-data__title">
+							Uplift-моделирование (Uplift Model)
+						</h3>
+						<div class="modal-data__text">
+							<p>
+								расчет экономического эффекта от коммуникации с клиентом, рассчитанный как разница
+								вероятности целевого события с коммуникацией и без нее
+							</p>
+						</div>
+					</div>
+					<div class="modal-data__item">
+						<h3 class="modal-data__title">
+							Модели склонности клиентов к покупке в товарной категории за n-период времени
+						</h3>
+						<div class="modal-data__text">
+							<p>
+								модели прогнозирования склонности клиентов к покупке в той или иной товарной категории за
+								n-период времени: 1,2 недели, 1,3 месяца
+							</p>
+						</div>
+					</div>
+					<div class="modal-data__item">
+						<h3 class="modal-data__title">
+							Кластерный анализ клиентской базы
+						</h3>
+						<div class="modal-data__text">
+							<p>
+								выделение однородных похожих групп клиентов с целью оптимизации коммуникаций и выбора
+								оптимального инструмента для их таргетирования
+							</p>
+						</div>
+					</div>
+					<div class="modal-data__item">
+						<h3 class="modal-data__title">
+							Кластерный анализ и сегментация торговых точек
+						</h3>
+						<div class="modal-data__text">
+							<p>
+								выделение однородных похожих групп торговых точек для оптимизации их управления
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="popup popup--data js-popup" data-popup="data-ecom">
+		<button type="button" class="popup__close js-popup-close">
+			<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M17.6316 15.9997L22.5213 20.8894C22.9713 21.3395 22.9713 22.0692 22.5213 22.5193C22.0712 22.9694 21.3414 22.9694 20.8914 22.5193L16.0017 17.6296L11.112 22.5193C10.6619 22.9694 9.93218 22.9694 9.48209 22.5193C9.03201 22.0692 9.03201 21.3395 9.48209 20.8894L14.3718 15.9997L9.48209 11.11C9.03201 10.66 9.03201 9.93022 9.48209 9.48014C9.93218 9.03006 10.6619 9.03006 11.112 9.48014L16.0017 14.3698L20.8914 9.48014C21.3414 9.03006 22.0712 9.03006 22.5213 9.48014C22.9713 9.93022 22.9713 10.66 22.5213 11.11L17.6316 15.9997Z" fill="#232323" />
+			</svg>
+		</button>
+		<div class="popup__wrap">
+			<div class="modal-data">
+				<div class="modal-data__img">
+					<img src="images/data/data/ecom/ecom.svg" alt="" width="400" height="249">
+				</div>
+				<div class="modal-data__wrap">
+					<div class="modal-data__item">
+						<h3 class="modal-data__title">
+							LaL-моделирование банковских продуктов
+						</h3>
+						<div class="modal-data__text">
+							<p>
+								Модель, позволяющая расширить ЦА за счет поиска похожих клиентов, алгоритм находит
+								аудиторию, которая похожа на исходную по ряду признаков: пол, возраст, интересы, поведение и
+								др.
+							</p>
+						</div>
+					</div>
+					<div class="modal-data__item">
+						<h3 class="modal-data__title">
+							Модели отклика клиентов на предложение (Response Model)
+						</h3>
+						<div class="modal-data__text">
+							<p>
+								Модель прогнозирования вероятности целевого события / действия клиента при коммуникации и
+								рассылке того или иного промо-инструмента
+							</p>
+						</div>
+					</div>
+					<div class="modal-data__item">
+						<h3 class="modal-data__title">
+							Uplift-моделирование (Uplift Model)
+						</h3>
+						<div class="modal-data__text">
+							<p>
+								расчет экономического эффекта от коммуникации с клиентом, рассчитанный как разница
+								вероятности целевого события с коммуникацией и без нее
+							</p>
+						</div>
+					</div>
+					<div class="modal-data__item">
+						<h3 class="modal-data__title">
+							Cross-sell/ Up-sell модели
+						</h3>
+						<div class="modal-data__text">
+							<p>
+
+							</p>
+						</div>
+					</div>
+					<div class="modal-data__item">
+						<h3 class="modal-data__title">
+							Модели оптимального следующего предложения клиенту (NBO/NBA)
+						</h3>
+						<div class="modal-data__text">
+							<p>
+
+							</p>
+						</div>
+					</div>
+					<div class="modal-data__item">
+						<h3 class="modal-data__title">
+							Модели прогнозирование вероятности выкупа заказа
+						</h3>
+						<div class="modal-data__text">
+							<p>
+
+							</p>
+						</div>
+					</div>
+					<div class="modal-data__item">
+						<h3 class="modal-data__title">
+							Модели оттока / предоттока клиентов
+						</h3>
+						<div class="modal-data__text">
+							<p>
+								модель прогнозирование оттока / предоттока клиента за n-период времени
+							</p>
+						</div>
+					</div>
+					<div class="modal-data__item">
+						<h3 class="modal-data__title">
+							Модели прогнозирование доходности клиентов
+						</h3>
+						<div class="modal-data__text">
+							<p>
+							</p>
+						</div>
+					</div>
+					<div class="modal-data__item">
+						<h3 class="modal-data__title">
+							Модели прогнозирования CLTV клиентов
+						</h3>
+						<div class="modal-data__text">
+							<p>
+								прогнозирования общей выручки клиента за срок его существования в компании (СLTV)
+							</p>
+						</div>
+					</div>
+					<div class="modal-data__item">
+						<h3 class="modal-data__title">
+							Модели склонности клиентов к покупке в товарной категории за n-период времени
+						</h3>
+						<div class="modal-data__text">
+							<p>
+								модели прогнозирования склонности клиентов к покупке в той или иной товарной категории за
+								n-период времени: 1,2 недели, 1,3 месяца </p>
+						</div>
+					</div>
+					<div class="modal-data__item">
+						<h3 class="modal-data__title">
+							Кластерный анализ и сегментация клиентской базы </h3>
+						<div class="modal-data__text">
+							<p>
+								выделение однородных похожих групп клиентов с целью оптимизации коммуникаций и выбора
+								оптимального инструмента для их таргетирования</p>
+						</div>
+					</div>
+					<div class="modal-data__item">
+						<h3 class="modal-data__title">
+							Товарные рекомендации на сайте и мобильном приложении
+						</h3>
+						<div class="modal-data__text">
+							<p>
+							</p>
+						</div>
+					</div>
+					<div class="modal-data__item">
+						<h3 class="modal-data__title">
+							Персональные рекомендации клиентам
+						</h3>
+						<div class="modal-data__text">
+							<p>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="popup popup--data js-popup" data-popup="data-finance">
+		<button type="button" class="popup__close js-popup-close">
+			<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M17.6316 15.9997L22.5213 20.8894C22.9713 21.3395 22.9713 22.0692 22.5213 22.5193C22.0712 22.9694 21.3414 22.9694 20.8914 22.5193L16.0017 17.6296L11.112 22.5193C10.6619 22.9694 9.93218 22.9694 9.48209 22.5193C9.03201 22.0692 9.03201 21.3395 9.48209 20.8894L14.3718 15.9997L9.48209 11.11C9.03201 10.66 9.03201 9.93022 9.48209 9.48014C9.93218 9.03006 10.6619 9.03006 11.112 9.48014L16.0017 14.3698L20.8914 9.48014C21.3414 9.03006 22.0712 9.03006 22.5213 9.48014C22.9713 9.93022 22.9713 10.66 22.5213 11.11L17.6316 15.9997Z" fill="#232323" />
+			</svg>
+		</button>
+		<div class="popup__wrap">
+			<div class="modal-data">
+				<div class="modal-data__img">
+					<img src="images/data/data/finance/finance.svg" alt="" width="400" height="249">
+				</div>
+				<div class="modal-data__wrap">
+					<div class="modal-data__item">
+						<h3 class="modal-data__title">
+							LaL-моделирование банковских продуктов
+						</h3>
+						<div class="modal-data__text">
+							<p>
+								Модель, позволяющая расширить ЦА за счет поиска похожих клиентов, алгоритм находит
+								аудиторию, которая похожа на исходную по ряду признаков: пол, возраст, интересы, поведение и
+								др.
+							</p>
+						</div>
+					</div>
+					<div class="modal-data__item">
+						<h3 class="modal-data__title">
+							Модели отклика клиентов на предложение (Response Model)
+						</h3>
+						<div class="modal-data__text">
+							<p>
+								Модель прогнозирования вероятности целевого события / действия клиента при коммуникации и
+								рассылке того или иного промо-инструмента
+							</p>
+						</div>
+					</div>
+					<div class="modal-data__item">
+						<h3 class="modal-data__title">
+							Uplift-моделирование (Uplift Model)
+						</h3>
+						<div class="modal-data__text">
+							<p>
+								расчет экономического эффекта от коммуникации с клиентом, рассчитанный как разница
+								вероятности целевого события с коммуникацией и без нее
+							</p>
+						</div>
+					</div>
+					<div class="modal-data__item">
+						<h3 class="modal-data__title">
+							Uplift-моделирование (Uplift Model)
+						</h3>
+						<div class="modal-data__text">
+							<p>
+								расчет экономического эффекта от коммуникации с клиентом, рассчитанный как разница
+								вероятности целевого события с коммуникацией и без нее
+							</p>
+						</div>
+					</div>
+					<div class="modal-data__item">
+						<h3 class="modal-data__title">
+							Cross-sell/ Up-sell модели
+						</h3>
+						<div class="modal-data__text">
+							<p>
+
+							</p>
+						</div>
+					</div>
+					<div class="modal-data__item">
+						<h3 class="modal-data__title">
+							Модели оптимального следующего предложения клиенту (NBO/NBA)
+						</h3>
+						<div class="modal-data__text">
+							<p>
+
+							</p>
+						</div>
+					</div>
+					<div class="modal-data__item">
+						<h3 class="modal-data__title">
+							Модели прогнозирование вероятности выкупа заказа
+						</h3>
+						<div class="modal-data__text">
+							<p>
+
+							</p>
+						</div>
+					</div>
+					<div class="modal-data__item">
+						<h3 class="modal-data__title">
+							Модели оттока / предоттока клиентов
+						</h3>
+						<div class="modal-data__text">
+							<p>
+								модель прогнозирование оттока / предоттока клиента за n-период времени
+							</p>
+						</div>
+					</div>
+					<div class="modal-data__item">
+						<h3 class="modal-data__title">
+							Модели прогнозирование доходности клиентов
+						</h3>
+						<div class="modal-data__text">
+							<p>
+								модель прогнозирование оттока / предоттока клиента за n-период времени
+							</p>
+						</div>
+					</div>
+					<div class="modal-data__item">
+						<h3 class="modal-data__title">
+							Модели прогнозирования CLTV клиентов
+						</h3>
+						<div class="modal-data__text">
+							<p>
+								прогнозирования общей выручки клиента за срок его существования в компании (СLTV)
+							</p>
+						</div>
+					</div>
+					<div class="modal-data__item">
+						<h3 class="modal-data__title">
+							Модели склонности клиентов к покупке в товарной категории за n-период времени
+						</h3>
+						<div class="modal-data__text">
+							<p>
+								модели прогнозирования склонности клиентов к покупке в той или иной товарной категории за
+								n-период времени: 1,2 недели, 1,3 месяца
+							</p>
+						</div>
+					</div>
+					<div class="modal-data__item">
+						<h3 class="modal-data__title">
+							Кластерный анализ и сегментация клиентской базы
+						</h3>
+						<div class="modal-data__text">
+							<p>
+								выделение однородных похожих групп клиентов с целью оптимизации коммуникаций и выбора
+								оптимального инструмента для их таргетирования
+							</p>
+						</div>
+					</div>
+					<div class="modal-data__item">
+						<h3 class="modal-data__title">
+							Товарные рекомендации на сайте и мобильном приложении
+						</h3>
+						<div class="modal-data__text">
+							<p>
+
+							</p>
+						</div>
+					</div>
+					<div class="modal-data__item">
+						<h3 class="modal-data__title">
+							Персональные рекомендации клиентам
+						</h3>
+						<div class="modal-data__text">
+							<p>
+
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="popup popup--data js-popup" data-popup="data-telecom">
+		<button type="button" class="popup__close js-popup-close">
+			<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M17.6316 15.9997L22.5213 20.8894C22.9713 21.3395 22.9713 22.0692 22.5213 22.5193C22.0712 22.9694 21.3414 22.9694 20.8914 22.5193L16.0017 17.6296L11.112 22.5193C10.6619 22.9694 9.93218 22.9694 9.48209 22.5193C9.03201 22.0692 9.03201 21.3395 9.48209 20.8894L14.3718 15.9997L9.48209 11.11C9.03201 10.66 9.03201 9.93022 9.48209 9.48014C9.93218 9.03006 10.6619 9.03006 11.112 9.48014L16.0017 14.3698L20.8914 9.48014C21.3414 9.03006 22.0712 9.03006 22.5213 9.48014C22.9713 9.93022 22.9713 10.66 22.5213 11.11L17.6316 15.9997Z" fill="#232323" />
+			</svg>
+		</button>
+		<div class="popup__wrap">
+			<div class="modal-data">
+				<div class="modal-data__img">
+					<img src="images/data/data/telecom/telecom.svg" alt="" width="400" height="249">
+				</div>
+				<div class="modal-data__wrap">
+					<div class="modal-data__item">
+						<h3 class="modal-data__title">
+							LaL-моделирование продуктов телеком
+						</h3>
+						<div class="modal-data__text">
+							<p>
+								модели прогнозирования склонности клиентов к тому или иному телеко- продукту / услуге на
+								основе схожести клиентов, которые уже приобрели это продукт или услугу
+							</p>
+						</div>
+					</div>
+					<div class="modal-data__item">
+						<h3 class="modal-data__title">
+							Модели отклика клиентов на предложение (Response Model)
+						</h3>
+						<div class="modal-data__text">
+							<p>
+								модель прогнозирования вероятности целевого события / действия клиента при коммуникации и
+								рассылке того или иного предложения
+							</p>
+						</div>
+					</div>
+					<div class="modal-data__item">
+						<h3 class="modal-data__title">
+							Uplift-моделирование (Uplift Model)
+						</h3>
+						<div class="modal-data__text">
+							<p>
+								расчет экономического эффекта от коммуникации с клиентом, рассчитанный как разница
+								вероятности целевого события с коммуникацией и без нее
+							</p>
+						</div>
+					</div>
+					<div class="modal-data__item">
+						<h3 class="modal-data__title">
+							Cross-sell/ Up-sell модели телеком-услуг
+						</h3>
+						<div class="modal-data__text">
+							<p>
+
+							</p>
+						</div>
+					</div>
+					<div class="modal-data__item">
+						<h3 class="modal-data__title">
+							Модели оптимального следующего предложения клиенту (NBO/NBA)
+						</h3>
+						<div class="modal-data__text">
+							<p>
+
+							</p>
+						</div>
+					</div>
+					<div class="modal-data__item">
+						<h3 class="modal-data__title">
+							Модели склонности к приобретению услуги за n-период времени
+						</h3>
+						<div class="modal-data__text">
+							<p>
+								модели прогнозирования склонности клиентов к тому или иному телеком-продукту / услуге за
+								n-период времени
+							</p>
+						</div>
+					</div>
+					<div class="modal-data__item">
+						<h3 class="modal-data__title">
+							Модели оттока / предоттока клиентов
+						</h3>
+						<div class="modal-data__text">
+							<p>
+
+							</p>
+						</div>
+					</div>
+					<div class="modal-data__item">
+						<h3 class="modal-data__title">
+							Анти-фрод модели (Fraud-Model)
+						</h3>
+						<div class="modal-data__text">
+							<p>
+
+							</p>
+						</div>
+					</div>
+					<div class="modal-data__item">
+						<h3 class="modal-data__title">
+							Анти-фрод модели (Fraud-Model)
+						</h3>
+						<div class="modal-data__text">
+							<p>
+
+							</p>
+						</div>
+					</div>
+					<div class="modal-data__item">
+						<h3 class="modal-data__title">
+							Модели прогнозирование доходности клиентов
+						</h3>
+						<div class="modal-data__text">
+							<p>
+							</p>
+						</div>
+					</div>
+					<div class="modal-data__item">
+						<h3 class="modal-data__title">
+							Модели прогнозирования CLTV клиентов
+						</h3>
+						<div class="modal-data__text">
+							<p>
+								прогнозирования общей выручки клиента за срок его существования в компании (СLTV)
+							</p>
+						</div>
+					</div>
+					<div class="modal-data__item">
+						<h3 class="modal-data__title">
+							Прогноз трафика на базовых станциях
+						</h3>
+						<div class="modal-data__text">
+							<p>
+
+							</p>
+						</div>
+					</div>
+					<div class="modal-data__item">
+						<h3 class="modal-data__title">
+							Персональные рекомендации клиенту
+						</h3>
+						<div class="modal-data__text">
+							<p>
+
+							</p>
+						</div>
+					</div>
+					<div class="modal-data__item">
+						<h3 class="modal-data__title">
+							Кластерный анализ и сегментация клиентской базы
+						</h3>
+						<div class="modal-data__text">
+							<p>
+								выделение однородных похожих групп клиентов с целью оптимизации коммуникаций и выбора
+								оптимального инструмента для их таргетирования
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/app.min.js"></script>
+
+	<script src="js/slider.min.js"></script>
+
+</body>
+
+</html>
