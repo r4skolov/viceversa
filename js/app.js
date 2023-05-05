@@ -505,6 +505,36 @@ function init() {
   components_burger();
   components_smoothScroll();
   modal.init();
+  const socialBtn = document.querySelectorAll('.socials__button');
+  const socialItem = document.querySelectorAll('.socials__wrap');
+  socialBtn.forEach(e => {
+    e.addEventListener('click', e => {
+      const self = e.currentTarget;
+      const item = self.closest('.socials__item').querySelector('.socials__wrap');
+      socialBtn.forEach(el => {
+        if (el !== self) {
+          el.classList.remove('active');
+        }
+      });
+      socialItem.forEach(el => {
+        if (el !== item) {
+          el.classList.remove('active');
+        }
+      });
+      self.classList.toggle('active');
+      item.classList.toggle('active');
+    });
+  });
+  document.addEventListener('click', e => {
+    if (!e.target.closest('.socials__item')) {
+      socialBtn.forEach(el => {
+        el.classList.remove('active');
+      });
+      socialItem.forEach(el => {
+        el.classList.remove('active');
+      });
+    }
+  });
 }
 (function () {
   init();
